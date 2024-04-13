@@ -1,0 +1,567 @@
+body {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #EDF1FD;
+    font-size: 11px;
+    transition: 0ms;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    box-shadow: 40px -15px 30px black;
+    background-color: #EDF1FD;
+    z-index: 1000;
+}
+
+.sections_list {
+    display: none;
+}
+
+
+.menu_icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+}
+
+.brackets_icon {
+    background-image: url(./img/menu/brackets.png);
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.menu_sections {
+    display: flex;
+}
+
+.email {
+    font-weight: 500;
+}
+
+.introduction_cotainer {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+.introduction_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.introduction_title {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0 20px 0 20px;
+    align-self: center;
+}
+
+.picture {
+    border-radius: 50%;
+    float: right;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-left: 20px;
+    line-height: 200px;
+    text-align: center;
+
+}
+
+p {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+}
+
+.introduction_links_list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.introduction_links_item {
+    display: flex;
+    font-size: 18px;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 500ms;
+}
+
+.introduction_links_item:hover {
+    background-color: #e5e1f4;
+    font-weight: 500;
+    border-radius: 5px;
+    transform: scale(1.2);
+}
+
+.arrow_icon {
+    background-image: url(./img/introduction/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    padding: 10px;
+}
+
+.about_container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e9ff;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about_container p {
+    margin: 0;
+}
+
+.eduaction_container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #EDF1FD;
+    padding: 60px;
+    gap: 30px;
+}
+
+.education_list {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+}
+
+.education_image {
+    align-self: center;
+    margin: auto 0;
+}
+
+.education_image.ipn {
+    height: 150px;
+    width: 95px;
+}
+
+.education_image.helsinky {
+    height: 150px;
+    width: 200px;
+}
+
+.education_image.fcc {
+    height: 75px;
+    width: 100px;
+}
+
+.education_image.alura {
+    height: 75px;
+    width: 100px;
+}
+
+.formation_name {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.education_list_item {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    width: auto;
+    height: 300px;
+}
+
+.formation_title {
+    font-weight: 400;
+    margin: 0 0 10px 0;
+}
+
+.education_time {
+    font-weight: 300;
+    margin: 0 0 80px 0;
+}
+
+.hobbies_container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #e7e9ff;
+    padding: 60px;
+    gap: 50px;
+}
+
+.hobbies_section {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.hobbies_item {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    align-items: center;
+    gap: 15px;
+    border-color: #89a6fc;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+.hobbies_music {
+    content: url(./img/hobbies/music.png);
+    width: 50px;
+    align-self: center;
+}
+
+
+.hobbies_note {
+    content: url(./img/hobbies/note.png);
+    height: 20px;
+    transition: 300ms;
+}
+
+.hobbies_item:hover {
+    transform: translateY(-10px);
+    border-color: #4e09fb;
+}
+
+.hobbies_letters {
+    content: url(./img/hobbies/letters.png);
+    height: 20px;
+    transition: 300ms;
+}
+
+.hobbies_item:hover .hobbies_note, 
+.hobbies_item:hover .hobbies_letters,
+.hobbies_item:hover .hobbies_brackets_right,
+.hobbies_item:hover .hobbies_brackets,
+.hobbies_item:hover .hobbies_hiragana{
+    transform: rotateY(390grad);
+}
+
+.hobbies_item_description p{
+    display: flex;
+    align-content: center;
+    margin: 0;
+    gap: 10px;
+}
+
+.hobbies_reading {
+    content: url(./img/hobbies/reading.png);
+    width: 50px;
+}
+
+.hobbies_programming {
+    content: url(./img/hobbies/programming.png);
+    width: 50px;
+}
+
+.hobbies_brackets {
+    content: url(./img//hobbies/brackets.png);
+    height: 20px;
+    transition: 300ms;
+}
+
+.hobbies_brackets_right {
+    content: url(./img/hobbies/bracketsR.png);
+    height: 20px;
+    transition: 300ms;
+}
+
+.hobbies_languages {
+    content: url(./img/hobbies/languages.png);
+    width: 50px;
+}
+
+.hobbies_hiragana {
+    content: url(./img/hobbies/hiragana.png);
+    height: 20px;
+    transition: 300ms;
+}
+
+@media (min-width:834px) {
+
+    body {
+        font-family:  "Reddit Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 200;
+        font-style: normal;
+        background-color: #EDF1FD;
+        font-size: 11px;
+    }
+
+    .menu_container {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        height: 60px;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .menu_icon {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sections_list {
+        display: flex;
+        gap: 10px;
+        text-decoration: none;
+        align-items: center;
+    }
+    
+    .sections_list a{
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+    }
+
+    .section_item {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition-duration: 500ms;
+    }
+
+    .section_item:hover {
+        background-color: #9982ec;
+        border-radius: 5px;
+        transform: scale(1.15);
+        color: white;
+    }
+
+    .hand_icon {
+        content: url(./img/menu/hand.png);
+        height: 20px;
+    }
+
+    .book_icon {
+        content: url(./img/menu/book.png);
+        height: 20px;
+    }
+
+    .hobbies_icon {
+        content: url(./img/menu/hobbies.png);
+        height: 25px;
+    }
+
+    .skills_icon {
+        content: url(./img/menu/skills.png);
+        width: 20px;
+    }
+
+    .frontend_icon {
+        content: url(./img/menu/frontend.png);
+        height: 20px;
+    }
+
+    .backend_icon {
+        content: url(./img/menu/backend.png);
+        height: 20px;
+    }
+
+    .cv_icon {
+        content: url(./img/menu/cv.png);
+        height: 20px;
+    }
+
+    .introduction_cotainer {
+        margin-top: 60px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        height: 200px;
+        padding-top: 60px;
+    }
+
+    .introduction_title {
+        font-family:  "Reddit Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 28px;
+        align-content: normal;
+    }
+    
+    .introduction_text {
+        gap: 30px;
+        width: 70%;
+    }
+    
+    p {
+        font-size: 18px;
+        margin: 0 20px;
+    }
+
+    .picture {
+        order: 2;
+        width: 200px;
+        height: 200px;
+        margin: 0;
+    }
+    
+    .education_list {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+        margin: 0 20px 0 20px;
+        justify-content: space-around;
+    }
+
+    .education_list_item {
+        flex-direction: column wrap;
+        width: 300px;
+        height: 300px;
+    }
+
+    .education_list_item_description {
+        width: 300px;
+    }
+
+    .education_image {
+        margin: auto 0;
+    }
+
+    .education_time {
+        font-weight: 300;
+        margin: 0 0 20px 0;
+    }
+
+    .hobbies_section {
+        flex-flow: row wrap;
+    }
+
+    .hobbies_item {
+        width: 300px;
+    }
+    
+}
+
+@media (min-width:1440px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .sections_list {
+        gap: 30px;
+    }
+
+    .introduction_cotainer {
+        height: 400px;
+        margin-top: 100px;
+    }
+
+    .introduction_text {
+        gap: 50px;
+    }
+
+    .introduction_title {
+        font-size: 34px;
+        margin: 0 80px 0 80px;
+    }
+    
+    p {
+        font-size: 24px;
+        margin: 0 80px;
+    }
+
+    .introduction_links_item span {
+        font-size: 24px;
+    }
+    
+    .picture {
+        width: 400px;
+        height: 400px;
+    }
+
+    .about_container {
+        padding: 80px;
+    }
+
+    .about_title {
+        font-size: 34px;
+    }
+
+    .education_list_item {
+        flex-direction: column wrap;
+        width: 400px;
+        height: 350px;
+    }
+
+    .education_list_item_description {
+        width: 400px;
+    }
+
+    .education_image.ipn {
+        height: 240px;
+        width: 130px;
+    }
+    
+    .education_image.helsinky {
+        height: 250px;
+        width: 350px;
+    }
+    
+    .education_image.fcc {
+        height: 150px;
+        width: 200px;
+    }
+    
+    .education_image.alura {
+        height: 150px;
+        width: 200px;
+    }
+    
+    .hobbies_item {
+        width: 450px;
+    }
+
+    .hobbies_music {
+        width: 100px;
+    }
+    
+    .hobbies_reading {
+        width: 100px;
+    }
+    
+    .hobbies_programming {
+        width: 100px;
+    }
+
+    .hobbies_languages {
+        width: 100px;
+    }
+
+}
