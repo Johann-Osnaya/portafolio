@@ -16,7 +16,7 @@ body {
     height: 60px;
     width: 100%;
     align-items: center;
-    box-shadow: 40px -15px 30px black;
+    box-shadow: 20px 17px 22px -20px rgba(0,0,0,0.40);
     background-color: #EDF1FD;
     z-index: 1000;
 }
@@ -234,17 +234,12 @@ p {
     transition: 200ms;
 }
 
-.hobbies_music {
-    content: url(./img/hobbies/music.png);
-    width: 50px;
-    align-self: center;
-}
-
-
-.hobbies_note {
-    content: url(./img/hobbies/note.png);
-    height: 20px;
-    transition: 300ms;
+.hobbies_item_description p{
+    display: flex;
+    font-size: 18px;
+    align-content: center;
+    margin: 0;
+    gap: 10px;
 }
 
 .hobbies_item:hover {
@@ -252,25 +247,22 @@ p {
     border-color: #4e09fb;
 }
 
-.hobbies_letters {
-    content: url(./img/hobbies/letters.png);
+.hobbies_music {
+    content: url(./img/hobbies/music.png);
+    width: 50px;
+    align-self: center;
+}
+
+.hobbies_note {
+    content: url(./img/hobbies/note.png);
     height: 20px;
     transition: 300ms;
 }
 
-.hobbies_item:hover .hobbies_note, 
-.hobbies_item:hover .hobbies_letters,
-.hobbies_item:hover .hobbies_brackets_right,
-.hobbies_item:hover .hobbies_brackets,
-.hobbies_item:hover .hobbies_hiragana{
-    transform: rotateY(390grad);
-}
-
-.hobbies_item_description p{
-    display: flex;
-    align-content: center;
-    margin: 0;
-    gap: 10px;
+.hobbies_letters {
+    content: url(./img/hobbies/letters.png);
+    height: 20px;
+    transition: 300ms;
 }
 
 .hobbies_reading {
@@ -305,6 +297,102 @@ p {
     height: 20px;
     transition: 300ms;
 }
+
+.hobbies_item:hover .hobbies_note, 
+.hobbies_item:hover .hobbies_letters,
+.hobbies_item:hover .hobbies_brackets_right,
+.hobbies_item:hover .hobbies_brackets,
+.hobbies_item:hover .hobbies_hiragana{
+    transform: rotateY(390grad);
+}
+
+.skills_container {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #EDF1FD;
+    padding: 60px;
+    gap: 50px;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.skills_section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.skills_item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 15px;
+    height: 210px;
+    box-shadow: 20px 20px 22px -10px rgba(0,0,0,0.40);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.skills_item img{
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+
+.skills_react {
+    content: url(./img/skills/react.png);
+    width: 100px;
+}
+
+.skills_item:hover {
+    transform: translateY(-10px);
+    box-shadow: 20px 20px 22px -1px rgba(0,0,0,0.40);
+}
+
+.skills_item_description {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.skills_item_description p{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.skills_item_backend {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 15px;
+    height: 210px;
+    box-shadow: 20px 20px 22px -10px rgba(0,0,0,0.40);
+    background-color:  #000000;
+    border-radius: 10px;
+    transition: 300ms;
+    color: #FFFFFF;
+}
+
+.skills_item_backend img{
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+
+.skills_item_backend:hover {
+    transform: translateY(-10px);
+    box-shadow: 20px 20px 22px -1px rgba(0,0,0,0.40);
+}
+
+.skills_item_backend p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
 
 @media (min-width:834px) {
 
@@ -463,7 +551,18 @@ p {
     }
 
     .hobbies_item {
+        height: 200px;
         width: 300px;
+        justify-content: center;
+    }
+
+    .hobbies_item p{
+        font-size: 18px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        font-weight: 400;
     }
     
 }
@@ -543,9 +642,13 @@ p {
         height: 150px;
         width: 200px;
     }
-    
+
     .hobbies_item {
         width: 450px;
+    }
+
+    .hobbies_item p{
+        font-size: 24px;
     }
 
     .hobbies_music {
@@ -562,6 +665,48 @@ p {
 
     .hobbies_languages {
         width: 100px;
+    }
+
+    .hobbies_note {
+        height: 25px;
+    }
+    
+    .hobbies_letters {
+        height: 25px;
+    }
+    
+    .hobbies_brackets {
+        height: 25px;
+    }
+    
+    .hobbies_brackets_right {
+        height: 25px;
+    }
+    
+    .hobbies_hiragana {
+        height: 25px;
+    }
+
+    .skills_item {
+        height: 270px;
+        width: auto;
+    }
+    
+    .skills_item img{
+        height: 220px;
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .skills_item_backend {
+        height: 270px;
+        width: auto;
+    }
+    
+    .skills_item_backend img{
+        height: 220px;
+        width: auto;
+        border-radius: 10px 10px 0 0;
     }
 
 }
