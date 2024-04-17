@@ -393,6 +393,14 @@ p {
     font-weight: 500;
 }
 
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #e7e9ff;
+    padding: 60px;
+    gap: 50px;
+}
+
 
 @media (min-width:834px) {
 
