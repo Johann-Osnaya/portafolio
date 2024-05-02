@@ -55,6 +55,7 @@ const validateFields = () => {
             document.querySelector('.validationMessage').setAttribute('style', 'display: none')
         }, 5000)
     } else {
-        window.open(`mailto:johann.osnaya@gmail.com?subject=${subjectInput}&body="Hello Johann Osnaya, my name is ${nameInput}.\n\n${messageInput}`);
+        window.open(`mailto:johann.osnaya@gmail.com?subject=${subjectInput}&body=Hello Johann Osnaya, my name is ${nameInput}.%0D%0A%0D%0A${messageInput}`);
     }
+
 }
