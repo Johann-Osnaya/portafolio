@@ -393,12 +393,204 @@ p {
     font-weight: 500;
 }
 
+.frontend_container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px 20px 20px;
+    background-color: #e7e9ff;
+    gap:50px;
+}
+
+
+.frontend_item {
+    display: flex;
+    flex-flow: column;
+    gap: 20px
+}
+
+.frontend_item_contents {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.frontend_item img{
+    width: 100%;
+}
+
+.frontend_item p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.frontend_item .front_description {
+    font-weight: 300;
+    font-size: 14px
+}
+
+.front_buttons {
+    margin-bottom: 70px;
+}
+.repo_button {
+    padding: 10px;
+    background:  white;
+    color: #7041e7;
+    font-weight: 500;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.repo_button:hover {
+    color:  white;
+    background: #7041e7;
+    transform: scale(1.2);
+}
+
+.demo_button {
+    background: #7041e7;
+    color: white;
+    border: none;
+    padding: 11px;
+    margin-left: 10px;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.demo_button:hover {
+    background:  white;
+    color: #7041e7;
+    border-color: #7041e7;
+    border-width: 1px;
+    transform: scale(1.2);
+}
+
+.frontend_container.back {
+    background-color: #EDF1FD;
+    justify-content: center;
+}
+
+.form_container {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px 20px 20px;
+    background-color: #e7e9ff;
+}
+
+.validationMessage {
+    padding: 10px;
+    background-color:#7041e7;
+    color: white;
+    display: none;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.form-item{
+    position: relative;
+  }
+
+.form-item input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    border: solid 1px #8400ff;
+    transition: all .3s ease;
+    padding:  15px;
+    color: #8400ff;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+.form-item input:focus{
+    border-color: #7041e7;
+  }
+
+.form-item label{
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 22px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #e7e9ff;
+    padding: 0 10px;
+    color: #7041e7;
+    transition: all .3s ease;
+}
+
+.form-item input:focus + label,
+.form-item input:not(:placeholder-shown) + label{
+    font-size: 14px;
+    top: -5px;
+}
+
+.form-item input:focus + label{
+    color: #7041e7;
+}
+
+textarea {
+    background: transparent;
+    color: #8400ff;
+    font-size: 18px;
+}
+
+.form-item textarea{
+    display: block;
+    width: 300px;
+    height: 30px;
+    background: transparent;
+    border: solid 1px #8400ff;
+    transition: all .3s ease;
+    padding:  15px;
+    margin-bottom: 20px;
+}
+
+.form-item textarea:focus{
+    border-color: #7041e7;
+}
+
+.form-item textarea:focus + label,
+.form-item textarea:not(:placeholder-shown) + label{
+    font-size: 14px;
+    top: -5px;
+}
+
+.form-item textarea:focus + label{
+    color: #7041e7;
+}
+
+.button_container {
+    height: 60px;
+}
+
+.demo_button.button_form {
+    margin: 0;
+    display: none;
+}
+
 footer {
     display: flex;
     flex-flow: column wrap;
-    background-color: #e7e9ff;
+    background-color: #EDF1FD;
     padding: 60px;
     gap: 50px;
+}
+
+footer .introduction_title {
+    font-size: 16px;
 }
 
 
@@ -573,6 +765,97 @@ footer {
         font-weight: 400;
     }
     
+
+    .frontend_container {
+        justify-content: space-around;
+    }
+
+    .frontend_item {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 100px;
+    }
+
+    .frontend_item img{
+        width: 60%;
+        height: auto;
+    }
+
+    .frontend_item_contents {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 30px;
+    width: 38%;
+    justify-content: center;
+    }
+    
+    .frontend_item p {
+        margin: 0;
+        font-weight: 700;
+        font-size: 26px;
+    }
+    
+    .frontend_item .front_description {
+        font-weight: 300;
+        font-size: 20px
+    }
+    
+    .front_buttons {
+        margin-bottom: 0;
+    }
+    .repo_button {
+        padding: 20px;
+        background:  white;
+        color: #7041e7;
+        font-weight: 500;
+        font-family: "Reddit Mono", monospace;
+        font-optical-sizing: auto;
+        border: none;
+        cursor: pointer;
+        transition: 300ms;
+        font-size: 18px;
+    }
+    
+    .repo_button:hover {
+        color:  white;
+        background: #7041e7;
+        transform: scale(1.2);
+    }
+    
+    .demo_button {
+        background: #7041e7;
+        color: white;
+        border: none;
+        padding: 21px;
+        margin-left: 20px;
+        font-family: "Reddit Mono", monospace;
+        font-optical-sizing: auto;
+        cursor: pointer;
+        transition: 300ms;
+        font-size: 18px;
+    }
+    
+    .demo_button:hover {
+        background:  white;
+        color: #7041e7;
+        border-color: #7041e7;
+        border-width: 1px;
+        transform: scale(1.2);
+    }
+
+    .form-item input{
+        width: 500px;
+      }
+    
+    .form-item textarea{
+        width: 500px;
+    }
+
+    
+    footer .introduction_title {
+        font-size: 22px;
+    }
+    
 }
 
 @media (min-width:1440px) {
@@ -715,6 +998,54 @@ footer {
         height: 220px;
         width: auto;
         border-radius: 10px 10px 0 0;
+    }
+
+    .frontend_container {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    .frontend_section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 40px
+    }
+
+    .frontend_item {
+        display: flex;
+        flex-flow: row wrap;
+        margin-bottom: 100px;
+        flex-shrink: 1;
+    }
+
+    .frontend_item img{
+        width: 330px;
+    }
+
+    .frontend_item_contents {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 330px;
+    justify-content: center;
+    }
+    
+    .frontend_item p {
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+    }
+    
+    .frontend_item .front_description {
+        font-weight: 300;
+        font-size: 20px
+    }
+    
+    footer .introduction_title {
+        font-size: 26px;
     }
 
 }

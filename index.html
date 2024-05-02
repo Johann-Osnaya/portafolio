@@ -48,7 +48,7 @@
                     </li>
 
                     <li>
-                        <!-- <a class="section_item" href="#frontend">
+                        <a class="section_item" href="#frontend">
                             <i class="frontend_icon"></i>
                             <span>Frontend</span>
                         </a>
@@ -59,7 +59,7 @@
                             <i class="backend_icon"></i>
                             <span>Backend</span>
                         </a>
-                    </li> -->
+                    </li>
 
                     <li>
                         <a class="section_item" href="./CV.pdf">
@@ -82,15 +82,22 @@
             <div class="introduction_links">
                 <ul class="introduction_links_list">
                     <li>
-                        <a href="https://github.com/Johann-Osnaya" class="introduction_links_item" rel="noopener noreferer" target="_blank">
+                        <a href="https://github.com/Johann-Osnaya" class="introduction_links_item" rel="noopener noreferrer" target="_blank">
                             <span>Github</span>
                             <i class="arrow_icon"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://www.linkedin.com/in/johann-emmanuel-jes%C3%BAs-osnaya-6a0744203/" class="introduction_links_item" rel="noopener noreferer" target="_blank">
+                        <a href="https://www.linkedin.com/in/johann-emmanuel-jes%C3%BAs-osnaya-6a0744203/" class="introduction_links_item" rel="noopener noreferrer" target="_blank">
                             <span>LinkedIn</span>
+                            <i class="arrow_icon"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./CV.pdf" class="introduction_links_item" rel="noopener noreferrer" target="_blank">
+                            <span>CV</span>
                             <i class="arrow_icon"></i>
                         </a>
                     </li>
@@ -207,7 +214,7 @@
         <ul class="skills_section">
             <li>
                 <div class="skills_item">
-                    <img src="./img/skills/react.png">
+                    <img src="./img/skills/React.png">
                     <div class="skills_item_description">
                         <p>React</p>
                     </div>
@@ -276,7 +283,7 @@
             </li>
             <li>
                 <div class="skills_item_backend">
-                    <img src="./img/skills/typescript.jpg">
+                    <img src="./img/skills/Typescript.jpg">
                     <div class="skills_item_description">
                         <p>Typescript</p>
                     </div>
@@ -330,18 +337,176 @@
                     </div>
                 </div>
             </li>
-            <!-- <li>
+            <li>
                 <div class="skills_item_backend">
                     <img src="./img/skills/sql.jpg">
                     <div class="skills_item_description">
                         <p>SQL Server</p>
                     </div>
                 </div>
-            </li> -->
+            </li>
         </ul>
+    </div>
+    <div class="frontend_container" id="frontend">
+        <h2 class="introduction_title">Frontend Projects</h2>
+        <ul class="frontend_section">
+            <li class="frontend_item">
+                <img src="./img/front/countries.png">
+                <div class="frontend_item_contents">
+                    <p>Country Information App (Made with React)</p>
+                    <p class="front_description">This app uses form control to find the country and axios to retrive infromation.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/countries" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://countries-eight-psi.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/front/notes.png">
+                <div class="frontend_item_contents">
+                    <p>Notes App (made with React) </p>
+                    <p class="front_description">This app uses controlled components to save the notes of the user and reactState hook to show after submiting them.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/notes-app" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://notes-app-three-lyart.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/front/blogs.png">
+                <div class="frontend_item_contents">
+                    <p>Blog App (made with React and Redux) </p>
+                    <p class="front_description">This app uses BootStrap for the styles and Redux for the controll of the state of the application. Tests for this app were made with Jest (unit and integration tests) and Cypress (E2E testing). You can try leaving a blog with the user "BlogUser" and the password "BlogPassword".</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/blog-app" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://blog-app-swart-one.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/front/ilaris.png">
+                <div class="frontend_item_contents">
+                    <p>Ilari's Flight Book (made with React and Typescript) </p>
+                    <p class="front_description">This app uses Typescript for the validation of the types recieved in all the aplication.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/ilaris-fligth-frontend" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://ilaris-fligth-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/front/patientor.png">
+                <div class="frontend_item_contents">
+                    <p>Patientor (made with React and Typescript) </p>
+                    <p class="front_description">This app uses Typescript for the validation of the types recieved in all the aplication and the validatation of the forms. For the styles of the application MIU Materials was used.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/patientor-frontend" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://patientor-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/front/crypto.png">
+                <div class="frontend_item_contents">
+                    <p>Crypto Challenge (made with CSS, HTML and Javascript) </p>
+                    <p class="front_description">This cryptographer was made during the Oracle ONE formation.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/CryptoChallenge" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://johann-osnaya.github.io/CryptoChallenge/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/front/portafolio.png">
+                <div class="frontend_item_contents">
+                    <p>Portfolio (made with CSS, HTML and Javascript) </p>
+                    <p class="front_description">This portafolio was made as part of the Oracle ONE education for the frontend formation.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/portafolio" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://portafolio-ashen-psi.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="frontend_container back" id="backend">
+        <h2 class="introduction_title">Backend Projects</h2>
+        <ul class="frontend_section">
+            <li class="frontend_item">
+                <img src="./img/back/notes.png">
+                <div class="frontend_item_contents">
+                    <p>Notes App (made with MongoDB and Express) </p>
+                    <p class="front_description">This app uses Express and MongoDB to save the notes. The project is upload in Vercel and every day at midnight a CRON executes to delete the notes that have been submited.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/notes-app" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://notes-app-three-lyart.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/back/blog.png">
+                <div class="frontend_item_contents">
+                    <p>Blog App (made with Express, MongoDB and JWT) </p>
+                    <p class="front_description">This app uses Express for the logic and MongoDb to save the blogs. This application lets you create, update, delete, like and leave a comment in a blog. For the autentication to use the APIs and the removal of the posts, JWT was used. The testing of the Blog APIs was made with Jest (unit and integration tests).You can try leaving a blog with the user "BlogUser" and the password "BlogPassword".</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/blog-app" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://blog-app-swart-one.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/back/ilaris.png">
+                <div class="frontend_item_contents">
+                    <p>Ilari's Flight Book (made with Express and Typescript) </p>
+                    <p class="front_description">This app uses Typescript for the validation of the types recieved in all the submit of a new entry to the book. The database is made in memory with JSON Server.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/ilaris-fligth-frontend" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://ilaris-fligth-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+            <li class="frontend_item">
+                <img src="./img/back/patientor.png">
+                <div class="frontend_item_contents">
+                    <p>Patientor (made with Express and Typescript) </p>
+                    <p class="front_description">This app uses Typescript for the validation of the types recieved in all the aplication and the validatation of the data recieved when adding a new patient or a new entry.</p>
+                    <div class="front_buttons">
+                        <a href="https://github.com/Johann-Osnaya/patientor-frontend" target="_blank" rel="noopener noreferrer"><button class="repo_button">Respository</button></a>
+                        <a href="https://patientor-frontend.vercel.app/" target="_blank" rel="noopener noreferrer"><button class="demo_button">Live Demo</button></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="form_container">
+        <h2 class="introduction_title">Contact</h2>
+
+        <p class="validationMessage">Error</p>
+
+        <div class="form-item">
+        <input type="text" onkeyup="enableButton()" id="name" autocomplete="off" placeholder="">
+        <label for="name">Name</label>
+        </div>
+        <div class="form-item">
+        <input type="text" id="email" onkeyup="enableButton()"  autocomplete="off" placeholder="">
+        <label for="email">Email</label>
+        </div>
+        <div class="form-item">
+        <input type="text" id="subject" onkeyup="enableButton()"   autocomplete="off" placeholder="">
+        <label for="subject">Subject line</label>
+        </div>
+        <div class="form-item">
+        <textarea type="text" id="message" onkeyup="enableButton()"  autocomplete="off" placeholder=""></textarea>
+        <label for="message">Message</label>
+        </div>
+        <div class="button_container">
+            <button id="submit_button" onclick="validateFields()" class="demo_button button_form">Send message</button>
+        </div>
+
     </div>
     <footer>
         <h2 class="introduction_title">&copy; Johann Osnaya 2024</h2>
     </footer>
 </body>
+<script src="index.js"></script>
 </html>
