@@ -11,6 +11,14 @@ const enableButton = () => {
 }
 
 
+const setMessage = (text) => {
+    document.querySelector('.validationMessage').setAttribute('style', 'display: flex')
+    document.querySelector('.validationMessage').textContent = text;
+    setTimeout(() => {
+        document.querySelector('.validationMessage').setAttribute('style', 'display: none')
+    }, 5000)
+}
+
 
 
 const validateFields = () => {
@@ -21,39 +29,20 @@ const validateFields = () => {
     const messageInput = document.querySelector('#message').value
     if(!nameInput || !emailInput || !subjectInput || !messageInput)
     {
-        document.querySelector('.validationMessage').setAttribute('style', 'display: flex')
-        document.querySelector('.validationMessage').textContent = 'Error: All fields must me filled!';
-        setTimeout(() => {
-            document.querySelector('.validationMessage').setAttribute('style', 'display: none')
-        }, 5000)
+        setMessage('Error: All fields must me filled!')
+
     } else if(nameInput.length > 50) {
-        document.querySelector('.validationMessage').setAttribute('style', 'display: flex')
-        document.querySelector('.validationMessage').textContent = 'Error: Field "Name" must be shorter than 50 characters!';
-        setTimeout(() => {
-            document.querySelector('.validationMessage').setAttribute('style', 'display: none')
-        }, 5000)
+        setMessage('Error: Field "Name" must be shorter than 50 characters!')
     }
     else if(!regex.test(emailInput)) {
-        document.querySelector('.validationMessage').setAttribute('style', 'display: flex')
-        document.querySelector('.validationMessage').textContent = 'Error: Field "Email" must be of type "****@domain.com"';
-        setTimeout(() => {
-            document.querySelector('.validationMessage').setAttribute('style', 'display: none')
-        }, 5000)
+        setMessage('Error: Field "Email" must be of type "****@domain.com"')
     }
     else if(subjectInput.length > 50) {
-        document.querySelector('.validationMessage').setAttribute('style', 'display: flex')
-        document.querySelector('.validationMessage').textContent = 'Error: Field "Subject Line" must be shorter than 50 characters!';
-        setTimeout(() => {
-            document.querySelector('.validationMessage').setAttribute('style', 'display: none')
-        }, 5000)
+        setMessage('Error: Field "Subject Line" must be shorter than 50 characters!')
     }
     else if(messageInput.length > 300)
     {
-        document.querySelector('.validationMessage').setAttribute('style', 'display: flex')
-        document.querySelector('.validationMessage').textContent = 'Error: Field "Message" must be shorter than 300 characters!';
-        setTimeout(() => {
-            document.querySelector('.validationMessage').setAttribute('style', 'display: none')
-        }, 5000)
+        setMessage('Error: Field "Message" must be shorter than 300 characters!')
     } else {
         window.open(`mailto:johann.osnaya@gmail.com?subject=${subjectInput}&body=Hello Johann Osnaya, my name is ${nameInput}.%0D%0A%0D%0A${messageInput}`);
     }
